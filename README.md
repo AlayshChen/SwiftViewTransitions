@@ -1,4 +1,4 @@
-This is a swift demo that I rewrite [ViewTransitions](https://developer.apple.com/library/ios/samplecode/ViewTransitions/Introduction/Intro.html).
+This is a Swift demo that I rewrite [ViewTransitions](https://developer.apple.com/library/ios/samplecode/ViewTransitions/Introduction/Intro.html).
 
 ScreenShot:
 
