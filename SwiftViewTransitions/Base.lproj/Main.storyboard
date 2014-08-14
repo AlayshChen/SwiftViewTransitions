@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6205" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="0s4-qC-lmB">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6198"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="nCG-sI-dkr">
+            <objects>
+                <navigationController toolbarHidden="NO" id="0s4-qC-lmB" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="NYk-tR-j9o">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="l37-y9-RUV">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Wxx-4n-POr"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2LU-vI-mvJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-462" y="362"/>
+        </scene>
+        <!--View Transitation-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SwiftViewTransitions" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="View Transitation" id="0qK-Er-bCY"/>
+                    <connections>
+                        <outlet property="backView" destination="NSD-id-eRF" id="whD-Oy-mSg"/>
+                        <outlet property="bounceButtonItem" destination="x2U-fR-XIH" id="MTS-nB-OyO"/>
+                        <outlet property="fadeButtonItem" destination="9y0-Cd-A5t" id="Ffb-3o-L93"/>
+                        <outlet property="flipButtonItem" destination="Upl-t8-JyU" id="vVa-Xe-yZm"/>
+                        <outlet property="frontView" destination="Wxy-wm-Z7d" id="vTe-WV-iEe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image1.jpg" id="Wxy-wm-Z7d" userLabel="FrontView">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image2.jpg" id="NSD-id-eRF" userLabel="BackView">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <barButtonItem title="Bounce" id="x2U-fR-XIH" userLabel="Bounce">
+                    <connections>
+                        <action selector="bounceAction:" destination="BYZ-38-t0r" id="mvm-G2-rh3"/>
+                    </connections>
+                </barButtonItem>
+                <barButtonItem title="Flip" id="Upl-t8-JyU" userLabel="Flip">
+                    <connections>
+                        <action selector="flipAction:" destination="BYZ-38-t0r" id="Xof-6u-hV3"/>
+                    </connections>
+                </barButtonItem>
+                <barButtonItem title="Fade" id="9y0-Cd-A5t" userLabel="Fade">
+                    <connections>
+                        <action selector="fadeAction:" destination="BYZ-38-t0r" id="GUG-Tb-La4"/>
+                    </connections>
+                </barButtonItem>
+            </objects>
+            <point key="canvasLocation" x="232" y="362"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="image1.jpg" width="320" height="436"/>
+        <image name="image2.jpg" width="320" height="436"/>
+    </resources>
+</document>
