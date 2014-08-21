@@ -2,4 +2,4 @@ This is a Swift demo that I rewrite [ViewTransitions](https://developer.apple.co
 
 Screenshot:
 
-![image](/ScreenShot/1.png)
+![image](/ScreenShot/viewtransitions.gif)
