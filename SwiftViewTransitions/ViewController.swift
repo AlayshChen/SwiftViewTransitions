@@ -52,7 +52,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func bounceAction(sender: AnyObject) {
-        navigationController.toolbar.userInteractionEnabled = false
+        navigationController!.toolbar.userInteractionEnabled = false
         var fromView, toView: UIView
         if frontView.superview != nil {
             fromView = frontView
@@ -76,13 +76,13 @@ class ViewController: UIViewController {
                     self.view.removeConstraints(constraints)
                 }
                 fromView.removeFromSuperview()
-                self.navigationController.toolbar.userInteractionEnabled = true
+                self.navigationController!.toolbar.userInteractionEnabled = true
         }
         previousConstraints = constrain(toView, toMatchWithSuperview: view)
     }
     
     func performTransition(options: UIViewAnimationOptions) {
-        navigationController.toolbar.userInteractionEnabled = false
+        navigationController!.toolbar.userInteractionEnabled = false
         var fromView, toView: UIView
         if frontView.superview != nil {
             fromView = frontView
@@ -97,7 +97,7 @@ class ViewController: UIViewController {
             if constraints != nil {
                 self.view.removeConstraints(constraints)
             }
-            self.navigationController.toolbar.userInteractionEnabled = true
+            self.navigationController!.toolbar.userInteractionEnabled = true
         }
         previousConstraints = constrain(toView, toMatchWithSuperview: view)
     }
